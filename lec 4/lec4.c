@@ -1,6 +1,6 @@
 #include <stdio.h>
 // code for if else
-int main()
+/*int main()
 {
     int a=5;
     a<5?printf("hello"):printf("hiii");
@@ -111,7 +111,97 @@ else
             break;
         }
         return 0;
-    }
+    }*/
   
+// code for traffic light
 
+/*int main(){
+    int a;
+    printf("Enter number");
+    scanf("%d",&a);
+    switch(a){
+        case 1: 
+        printf("Red light\n Stop\n");
+        break;
+        case 2:
+        printf("Yellow light\n Get ready\n");
+        break;
+        case 3:
+        printf("Green light \n Go \n");
+        break;
+        default :
+        printf("Invalid number");
+        break;
+    }
+}*/
     
+// code for currency converter
+
+/*int main(){
+    int choice;
+    float inr;
+    printf("Press 1 for INR to USD\n 2 for INR to EUR\n 3 INR to YEN\n 4 INR to AUD\n");
+    printf("Enter choice");
+    scanf("%d", &choice);
+    printf("Enter amount in INR");
+    scanf("%f",&inr);
+    switch(choice)
+    {
+        case 1:
+        printf("USD=%.2f\n",inr*0.012);
+        break;
+        case 2:
+        printf("EUR=%.2f\n",inr*0.011);
+        break;
+        case 3:
+        printf("YEN=%.2f\n",inr*1.73);
+        break;
+        case 4:
+        printf("AUD=%.2f\n",inr*0.017);
+        break;
+        default :
+        printf("Invalid operation");
+        break;
+}
+return 0;
+}*/
+
+// Code for Atm machine
+int main()
+{
+    int choice;
+    float balance=10000;
+    float amount;
+    printf("Press 1 for checking balance\n 2 for withdraw\n 3 for deposit\n 4 for exit\n");
+    printf("Enter choice\n");
+    scanf("%d",&choice);
+    switch(choice){
+        case 1:
+        printf("Current Balance=%.2f\n",balance);
+        break;
+        case 2:
+        printf("Enter amount to withdraw");
+        scanf("%f",&amount);
+        if(amount<=balance){
+            balance-=amount;
+            printf("withdraw successful\n New balance is %.2f\n",balance);
+        }
+        else{
+            printf("Insufficient balance!!!!!!\n");
+        }
+        break;
+        case 3:
+        printf("Enter amount to deposit");
+        scanf("%f",&amount);
+        balance+=amount;
+        printf("Deposit successful\n New balance=%.2f\n",balance);
+        break;
+        case 4:
+        printf("Thankyou for visiting please visit again!! exiting......\n");
+        break;
+        default:
+        printf("Invalid choice");
+        break;
+    }
+    return 0;
+}
