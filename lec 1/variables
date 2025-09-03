@@ -11,7 +11,7 @@ int main ()
     return 0;  
 }
 
-// code for decimal value vriable
+// code for decimal value variable
 int main (){
     float pi = 3.14;
     printf("HELLO\n");
