@@ -1,6 +1,7 @@
-#include <stdio.h>
 // code for if else
-/*int main()
+
+#include <stdio.h>
+int main()
 {
     int a=5;
     a<5?printf("hello"):printf("hiii");
@@ -111,11 +112,11 @@ else
             break;
         }
         return 0;
-    }*/
+    }
   
 // code for traffic light
 
-/*int main(){
+int main(){
     int a;
     printf("Enter number");
     scanf("%d",&a);
@@ -133,11 +134,11 @@ else
         printf("Invalid number");
         break;
     }
-}*/
+}
     
 // code for currency converter
 
-/*int main(){
+int main(){
     int choice;
     float inr;
     printf("Press 1 for INR to USD\n 2 for INR to EUR\n 3 INR to YEN\n 4 INR to AUD\n");
@@ -164,7 +165,7 @@ else
         break;
 }
 return 0;
-}*/
+}
 
 // Code for Atm machine
 int main()
